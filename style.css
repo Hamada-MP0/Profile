@@ -508,3 +508,46 @@ margin-top: 50px;
     text-align: justify;
     color: var(--text-black-700);
 }
+
+
+
+.Portfolio .container
+{
+    padding-bottom: 40px;
+}
+
+
+
+
+.Portfolio .Portfolio-heading{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+
+}
+
+.Portfolio .Portfolio-heading h2 {
+    font-weight: 500;
+    color: var(--text-black-900);
+}
+
+.Portfolio .Portfolio-item
+{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    margin-bottom: 30px;
+
+}
+.Portfolio .Portfolio-item-inner
+{
+    border: 6px solid var(--bg-black-100);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+
+}
+.Portfolio .Portfolio-item-inner .Portfolio-img img 
+{
+    width: 100%;
+    display: block;
+}
