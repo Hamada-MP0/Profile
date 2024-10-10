@@ -8,9 +8,17 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styleColor.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="color1.css" class="alternate-style" title="color1" disabled>
+    <link rel="stylesheet" href="color2.css" class="alternate-style" title="color2" disabled>
+    <link rel="stylesheet" href="color3.css" class="alternate-style" title="color3" disabled>
+    <link rel="stylesheet" href="color4.css" class="alternate-style" title="color4" disabled>
+    <link rel="stylesheet" href="color5.css" class="alternate-style" title="color5" disabled>
+ 
+    <link rel="stylesheet" href="style-Switcher.css">
     <title>Document</title>
 </head>
-<body>
+<body >
     <div class="main-container">
 
         <div class="aside">
@@ -29,7 +37,7 @@
             </ul>
         </div>
         <div class="main-content">
-            <section class="home section hidden">
+            <section class="home section ">
                 <div class="container">
                     <div class="row">
                         <div class="home-info padd-15">
@@ -47,7 +55,7 @@
                 </div>
             </section>
 
-            <section class="about section hidden">
+            <section class="about section ">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -236,7 +244,7 @@
                     </div>
                 </div>
             </section>
-             <section class="service section hidden ">
+             <section class="service section  ">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -394,10 +402,116 @@
                 </div>
             </sections> 
             <!--   contact-->    
-            <!--   contact-->    
-            <!--   contact-->    
+    
+               <section class="contact section">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Contact Me</h2>
+                        </div>
+                    </div>
+                    <h3 class="contact-title   padd-15">Have You Any Questions ?</h3>
+                    <h4 class="contact-sub-title padd-15">I'M AT YOUR SERVICES</h4>
+                    <div class="row">
+                        <div class="contact-info-item padd-15">
+                            <div class="icon">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                            <h4>Call Us On</h4>
+                            <p>+20123456789</p>
+                        </div>
+                        <div class="contact-info-item padd-15">
+                            <div class="icon">
+                                <i class="fa fa-map-marker"></i>
+                            </div>
+                            <h4>Office</h4>
+                            <p>123 Street, Egypt</p>
+                        </div>
+                        <div class="contact-info-item padd-15">
+                            <div class="icon">
+                                <i class="fa fa-envelope"></i>
+                            </div>
+                            <h4>Email</h4>
+                            <p>4HlQp@example.com</p>
+                        </div>
+                        <div class="contact-info-item padd-15">
+                            <div class="icon">
+                                <i class="fa fa-globe"></i>
+                            </div>
+                            <h4>Website</h4>
+                            <p>www.atlas.com</p>
+                        </div>
+                    </div>
+                    <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
+                    <h4 class="contact-sub-title padd-15">i'M VERY RESPONSIVE TO MESSAGES</h4>
+                    <div class="row">
+                        <div class="contact-form padd-15">
+                            <div class="row">
+                                <div class="form-item col-6 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Name">
+                                    </div>
+                                </div>
+                                <div class="form-item col-6 padd-15">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Subject">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                        <textarea name="" class="form-control" id="" placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                        <button type="submit" class="btn">Send Message</button>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+               </section>    
+
+            
         </div>
-    </div>
+    </div>               <!-- Switcher -->            
+    <div class="style-Switcher">
+        <div class="style-Switcher-toggler s-icon">
+            <!-- <i class="fas fa-cog fa-skin"> </i> -->
+            <i class="fa fa-cog fa-spin"> </i>
+        </div>
+        <div class="day-night s-icon">
+            
+            <!-- <i class="fas fa-moon"> </i> -->
+            <i class="fa "> </i>
+        </div>
+        <h4>Theme Colors</h4>
+        <div class="colors">
+            <span  class="color-1" onclick="setActiveStyle('color1')"></span>
+            <span  class="color-2" onclick="setActiveStyle('color2')"></span>
+            <span  class="color-3" onclick="setActiveStyle('color3')"></span>
+            <span  class="color-4" onclick="setActiveStyle('color4')"></span>
+            <span  class="color-5" onclick="setActiveStyle('color5')"></span>
+        </div>
+    </div>    
+
+    
+
+
+    <script src="main-switch.js"></script>
 
     <script  src="main.js"></script>
 </body>

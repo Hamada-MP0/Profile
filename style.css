@@ -8,6 +8,14 @@
     --text-black-900:#302e4d;
     --text-black-700:#504e70;
 }
+body.shadow-dark{
+
+  --bg-black-900:#1d1d2e;
+    --bg-black-100:#272329;
+    --bg-black-50:#211b24;
+    --text-black-900:#c4c2e2;
+    --text-black-700:#d8d7e9;
+}
 body{
     
     line-height: 1.5;
@@ -511,6 +519,7 @@ margin-top: 50px;
 
 
 
+
 .Portfolio .container
 {
     padding-bottom: 40px;
@@ -550,4 +559,211 @@ margin-top: 50px;
 {
     width: 100%;
     display: block;
+}
+
+.contact-title
+{
+    color: var(--skin-color);
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.contact-sub-title
+{
+    color: var(--text-black-900);
+    text-align: center;
+    font-size:15px;
+    margin-bottom: 60px;
+
+}
+.contact  .contact-info-item
+{
+    flex: 0 0 25%;
+    max-width: 25%;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.contact  .contact-info-item .icon
+{
+    display: inline-block;
+}
+
+.contact  .contact-info-item .icon .fa{
+    font-size: 25px;
+    color: var(--skin-color);
+
+}
+
+.contact  .contact-info-item h4
+{
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-black-900);
+    text-transform: capitalize;
+    margin: 15px 0 5px;
+}
+
+.contact  .contact-info-item p
+{
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--text-black-700);
+    font-weight: 400;
+}
+.contact .contact-form
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+
+}
+
+.contact .contact-form .col-6
+{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.contact .contact-form .col-12
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.contact .contact-form .form-item
+{
+    margin-bottom: 30px;
+
+}
+
+.contact .contact-form .form-item .form-control
+{
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    background: var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
+    padding: 10px 25px;
+    font-size: 16px;
+    color: var(--text-black-700);
+    transition: all 0.3s ease;
+}
+
+.contact .contact-form .form-item .form-control:focus
+{
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+
+.contact .contact-form .form-item .form-control::placeholder
+{
+    color: var(--text-black-700);
+    font-size: 16px;
+    font-weight: 400;
+    transition: all 0.3s ease;
+
+}
+
+.contact .contact-form .form-item .form-control:focus::placeholder
+{
+    color: transparent;
+}
+
+.contact .contact-form .form-item .form-control + label
+{
+    font-size: 16px;
+    color: var(--text-black-700);
+    display: inline-block;
+    margin-bottom: 10px;
+
+}
+
+.contact .contact-form .form-item .form-control + label .required
+{
+    margin-left: 2px;
+    color: var(--skin-color);
+
+}
+
+.contact .contact-form .form-item .form-control + label .error
+{
+    margin-left: 2px;
+    color: var(--skin-color);
+    font-size: 12px;
+
+}
+
+.contact .contact-form .form-item .form-control + label .error::after
+{
+    content: '!';
+    color: var(--skin-color);
+    margin-left: 2px;
+
+}
+
+.contact .contact-form .form-item textarea.form-control
+{
+    height: 140px;
+}
+
+.contact .contact-form .btn
+{
+    height: 50px;
+    padding: 0 50px;
+}
+@media(max-width:1315px)
+{
+    .aside{
+        left: -270px;
+    }
+    .main-content
+    {
+        padding-left: 0;
+    }
+    .about .about-content .personal-info .info-item p span
+    {
+        display: block;
+        margin-left: 0;
+    }
+}
+@media(max-width:1065px)
+{
+    .contact .contact-info-item,
+    .Portfolio .Portfolio-item,
+    .services .service-item
+    {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+   
+    .home .home-info
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+
+    }
+    .home .home-img
+    {
+        display: none;
+    }
+
+}
+@media(max-width:765px)
+{
+    .contact .contact-info-item,
+    .contact .contact-form .col-6,
+    .services .service-item,
+    .Portfolio .Portfolio-item,
+    .about .about-content .education,
+    .about .about-content .experience
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .about .about-content .skills,
+    .about .about-content .personal-info{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }
