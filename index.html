@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styleColor.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="color1.css" class="alternate-style" title="color1" disabled>
     <link rel="stylesheet" href="color2.css" class="alternate-style" title="color2" disabled>
     <link rel="stylesheet" href="color3.css" class="alternate-style" title="color3" disabled>
@@ -29,15 +29,15 @@
                 <span></span>
             </div>
             <ul class="nav">
-                <li><a href="#" class="active"><i class="fa fa-home"></i>Home</a></li>
-                <li><a href="#" ><i class="fa fa-user"></i>About</a></li>
-                <li><a href="#" ><i class="fa fa-list"></i>Services</a></li>
-                <li><a href="#" ><i class="fa fa-briefcase"></i>Portfolio</a></li>
-                <li><a href="#" ><i class="fa fa-comments"></i>Contact</a></li>
+                <li><a href="#Home" class="active"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="#About" ><i class="fa fa-user"></i>About</a></li>
+                <li><a href="#Services" ><i class="fa fa-list"></i>Services</a></li>
+                <li><a href="#Portfolio" ><i class="fa fa-briefcase"></i>Portfolio</a></li>
+                <li><a href="#Contact" ><i class="fa fa-comments"></i>Contact</a></li>
             </ul>
         </div>
         <div class="main-content">
-            <section class="home section ">
+            <section class="home active section  "id="Home">
                 <div class="container">
                     <div class="row">
                         <div class="home-info padd-15">
@@ -46,7 +46,7 @@
                             <p>I'm a web Designer with extensive experience for over 2 years . My expertise is to create 
                                 and website design,graghic design,and many more....  
                             </p>
-                            <a href="#contact" class="btn hir-me">Hire me</a>
+                            <a href="#" class="btn ">Download CV</a>
                         </div>
                         <div class="home-img padd-15">
                             <img src="1.jpg" alt="   ">
@@ -55,7 +55,7 @@
                 </div>
             </section>
 
-            <section class="about section ">
+            <section class="about section " id="About">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -108,8 +108,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="buttons padd-15">
-                                            <a href="#" class="btn">Download CV</a>
-                                            <a href="#contact" class="btn hire-me">Hire me</a>
+                                            <a href="#Contact" data-section-index="1" class="btn hire-me">Hire me</a>
                                         </div>
                                     </div>
                                 </div>
@@ -244,7 +243,7 @@
                     </div>
                 </div>
             </section>
-             <section class="service section  ">
+             <section class="service section  " id="Services">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -341,7 +340,7 @@
 
             </section>
 
-            <sections class="Portfolio section ">
+            <sections class="Portfolio section " id="Portfolio">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -403,7 +402,7 @@
             </sections> 
             <!--   contact-->    
     
-               <section class="contact section">
+               <section class="contact section" id="Contact">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">

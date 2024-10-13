@@ -38,17 +38,42 @@ body{
 ul{
     list-style: none;
 }
+.section.back-section
+{
+    z-index: 1;
+}
 .section{
     background: var(--bg-black-900);
     min-height: 100vh;
     display: block;
    
  
-
+ position: fixed;
+  left: 270px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
     padding: 0 30px;
     opacity: 1;
+    transition: all 0.3s ease;
 }
 
+.section.active{
+    z-index: 2;
+    animation: slideSection 1.5s ease;
+    opacity: 1;
+}
+@keyframes slideSection{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
 .hidden{
     display: none !important;
 }
@@ -90,9 +115,7 @@ background-color: var(--skin-color);
     left: 0;
     margin-top: 8px;
 }
-.main-content{
-    padding-left: 250px;
-}
+
 .padd-15{
     padding-left: 15px;
     padding-right: 15px;
@@ -143,6 +166,7 @@ background-color: var(--skin-color);
     padding: 30px;
     display: flex;
     justify-content: center;
+    transition: all 0.3s ease;
     align-items: center;
 }
 .aside .logo{
@@ -153,6 +177,10 @@ background-color: var(--skin-color);
 
 
 }
+.aside .nav-toggler.open span{
+    background-color: transparent;
+}
+
 .aside .logo a{
     color: var(--text-black-900);
     font-weight: 700;
@@ -200,6 +228,7 @@ background-color: var(--skin-color);
     background: var(--bg-black-100);
     display: none;
     align-items: center;
+    transition: all 0.3s ease;
     justify-content: center;
 }
 .aside .nav-toggler span{
@@ -217,7 +246,11 @@ position: absolute;
     width: 18px;
     top: -6px;
     left: 0;
+}.aside .nav-toggler.open span::before{
+    transform: rotate(45deg);
+    top: 0;
 }
+
 .aside .nav-toggler span::after{
     height: 2px;
     content: '';
@@ -227,6 +260,11 @@ position: absolute;
     top: 6px;
     left: 0;
 }
+.aside .nav-toggler.open span::after{
+    transform: rotate(-45deg);
+    top: 0;
+}
+
 .aside .nav{
     margin-top: 50px;
 }
@@ -373,7 +411,6 @@ display: inline-block   ;
     margin-top: 40px;
 }
 .about .about-content .personal-info .buttons .btn{
-    margin-right: 15px;
     margin-top: 10px;
 
 }
@@ -715,10 +752,23 @@ margin-top: 50px;
     .aside{
         left: -270px;
     }
-    .main-content
-    {
-        padding-left: 0;
-    }
+.aside .nav-toggler{
+    display: flex;
+    left: 30px;
+}
+.aside.open
+{
+    left: 0;
+}
+.aside .nav-toggler.open{
+    left: 300px ;
+}
+.section{
+    left: 0;
+}
+.section.open{
+    left: 270px;
+}
     .about .about-content .personal-info .info-item p span
     {
         display: block;
