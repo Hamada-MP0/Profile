@@ -1,12 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap"); */
 
 
 :root{
-    --bg-black-900:#1d1d2e;
-    --bg-black-100:#272329;
-    --bg-black-50:#211b24;
-    --text-black-900:#c4c2e2;
-    --text-black-700:#d8d7e9;
+    --bg-black-900:#f2f2fc;
+    --bg-black-100:#fdf9ff;
+    --bg-black-50:#e8dfec;
+    --text-black-900:#302e4d;
+    --text-black-700:#504e70;
 
     --hover-color:#12f7ff;
     --big-font:2.5rem;
@@ -187,7 +187,7 @@ background-color: var(--skin-color);
  position: absolute;
  top: 0;
  left: 0;
- background: var(--bg-black-100);
+ background: var(--bg-black-50);
  transition: .9s;
  z-index: -1;
  width: 0%;
@@ -1004,3 +1004,256 @@ margin-top: 50px;
         max-width: 100%;
     }
 }
+@media(max-width:765px)
+{
+    .contact .contact-info-item,
+    .contact .contact-form .col-6,
+    .services .service-item,
+    .Portfolio .Portfolio-item,
+    .about .about-content .education,
+    .about .about-content .experience
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .about .about-content .skills,
+    .about .about-content .personal-info{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+
+.ABOUT{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+    
+    
+span{
+    color: var(--skin-color);
+}
+/* }
+.ABOUT .about-img .about-More
+{
+    width: 40vh;
+    border-radius: 70%;
+    height: auto;
+
+}   
+.img-hero img{
+z-index: 10;
+}
+
+.img-hero{
+
+}
+.img-hero span{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: var(--skin-color);
+    border: 6px solid #d8d7e9;
+    border-radius: 70%;
+    overflow: hidden;
+    z-index: 11;
+    display: flex;
+}
+
+.img-hero span::before{
+    content: "";
+    position: absolute;
+    inset: 20px;
+    background: #12f7ff;
+    border-radius: 70%;
+      z-index: 11;
+}
+
+.img-hero span i{
+    position: absolute;
+    inset: 0;
+    background: #272329;
+    filter: blur(5px);
+    animation: animate 2s linear infinite;
+}
+@keyframes animate {
+    0%{
+        transform: rotate(0deg); 
+    }
+    100%{transform:rotate(360deg);}
+}
+
+
+
+
+
+
+
+
+
+ */
+
+.about-content{
+    padding: 3rem;
+}
+.about-content h2{
+    color: var(--skin-color);
+    
+}
+.about-content h3{
+    font-size: 2.1rem;
+    line-height: 3rem;
+    margin: .5rem 0;
+
+}
+.about-content p{
+    color: var(--text-black-700);
+}
+.text-box p{
+font-size: 1.1rem;
+font-weight: 500;
+}
+.about-btn{
+    margin: .8rem 0;
+}
+.about-btn button{
+    background: var(--bg-black-50);
+    padding: 10px 20px ;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    box-shadow: rgba(60, 64, 67, 0.3)0px 1px 2px 0,rgba(60, 64, 67, 0.15)0px 2px 6px 2px;
+    cursor: pointer;
+    transition: all .3s ease;
+
+}
+.about-btn button.active{
+    background: var(--skin-color);
+    color: var(--bg-black-50);
+}
+.text-box span{
+    color: var(--skin-color)   ;
+}
+.text-box{
+    margin: .8rem 0;
+}
+.content-btn>.Conten:not(:first-child){
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+/* 
+ظظ */
+.absolute {
+    position: absolute;
+  }
+  
+  .inline-block {
+    display: inline-block;
+  }
+  
+  .loader {
+    display: flex;
+    margin: 0.25em 0;
+  }
+  
+  .w-2 {
+    width: 0.5em;
+  }
+  
+  .dash {
+    animation: dashArray 2s ease-in-out infinite,
+      dashOffset 2s linear infinite;
+  }
+  
+  .spin {
+    animation: spinDashArray 2s ease-in-out infinite,
+      spin 8s ease-in-out infinite,
+      dashOffset 2s linear infinite;
+    transform-origin: center;
+  }
+  
+  @keyframes dashArray {
+    0% {
+      stroke-dasharray: 0 1 359 0;
+    }
+  
+    50% {
+      stroke-dasharray: 0 359 1 0;
+    }
+  
+    100% {
+      stroke-dasharray: 359 1 0 0;
+    }
+  }
+  
+  @keyframes spinDashArray {
+    0% {
+      stroke-dasharray: 270 90;
+    }
+  
+    50% {
+      stroke-dasharray: 0 360;
+    }
+  
+    100% {
+      stroke-dasharray: 270 90;
+    }
+  }
+  
+  @keyframes dashOffset {
+    0% {
+      stroke-dashoffset: 365;
+    }
+  
+    100% {
+      stroke-dashoffset: 5;
+    }
+  }
+  
+  @keyframes spin {
+    0% {
+      rotate: 0deg;
+    }
+  
+    12.5%,
+    25% {
+      rotate: 270deg;
+    }
+  
+    37.5%,
+    50% {
+      rotate: 540deg;
+    }
+  
+    62.5%,
+    75% {
+      rotate: 810deg;
+    }
+  
+    87.5%,
+    100% {
+      rotate: 1080deg;
+    }
+  }
+         
+
+
+
+  /* skills */
+
+
+  

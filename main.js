@@ -65,14 +65,14 @@ const nav =document.querySelector(".nav"),
             }
         }
 
-        document.querySelector(".hire-me").addEventListener("click",function(){
-            const sectionIndex= this.getAttribute("data-section-index");
-            showSection(this);
-            updateNav(this);
-            removeBackSection();
-            addBackSection(sectionIndex);  
+        // document.querySelector(".hire-me").addEventListener("click",function(){
+        //     const sectionIndex= this.getAttribute("data-section-index");
+        //     showSection(this);
+        //     updateNav(this);
+        //     removeBackSection();
+        //     addBackSection(sectionIndex);  
 
-        })
+        // })
 
         const navTogglerBtn=document.querySelector(".nav-toggler"),
         aside=document.querySelector(".aside");
@@ -90,3 +90,25 @@ const nav =document.querySelector(".nav"),
             }
         }
         ///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
+let subBtn = document.querySelector(".sub-btn");
+let suRead = document.querySelector(".reading");
+subBtn.onclick=function()
+{
+    suRead.classList.remove("hidden");
+}/////////////////////////////////////////////////////////////////////////////
+
+
+const buttons =document.querySelectorAll(".about-btn button");
+const conten = document.querySelectorAll(".Conten");
+
+buttons.forEach((button,index) =>{
+        button.addEventListener("click",()=>
+        {
+         conten.forEach(contents =>contents.style.display="none");
+         conten[index].style.display="block";
+         buttons.forEach(btn => btn.classList.remove("active"));
+         button.classList.add("active") 
+        });
+    
+});
