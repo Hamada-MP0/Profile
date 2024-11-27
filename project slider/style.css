@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.slider-container{
+    margin: 10px auto;
+    width: 800px;
+    height: 250px;
+    position: relative;
+}
+.slider-container img{
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 230px ;
+    transition: opacity 1s;
+    display: flex;
+    
+    z-index: 1;
+}
+.slider-container img.active{
+    opacity: 1;
+}
+.slider-container .slide-number{
+    left: 10px;
+    top: 10px;
+    position: absolute;
+    background: black;
+    color: white;
+    padding: 5px 10px;
+    font-size: 20px;
+    z-index: 2;
+    border-radius: 6px;
+}
+.slider-controls{
+    width: 800px;
+    margin: auto;
+overflow: hidden;
+
+}
+.slider-controls .prev,
+.slider-controls .next{
+    background: aqua;
+    color: aliceblue;
+    font-size: 16px;
+    
+    text-align: center;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 4px;
+    user-select: none;
+
+width: 20%;}
+.slider-controls .prev{
+    float: left;
+}
+.slider-controls .next{
+    float: right;
+}
+
+
+.slider-controls .prev.disablied,
+.slider-controls .next.disablied{
+    background-color: rgba(39, 199, 199, 0.349);
+    cursor: no-drop;
+}
+.slider-controls .indicator{
+    
+width: 60%;
+float: left;
+}
+.slider-controls .indicator ul{
+    list-style: none;
+    margin: 0;
+    text-align: center;
+}
+.slider-controls .indicator ul li{
+    display: inline-block;
+    background-color: aliceblue;
+    color: #333;
+    font-weight: bold;
+    width: 28px;
+    height: 28px;
+    border-radius: 4px;
+
+    margin: 0 2px;
+    line-height: 28px;
+    cursor: pointer;
+
+
+}
+.slider-controls .indicator ul li.active{
+    background-color: aqua;
+    color: #fff;
+
+}

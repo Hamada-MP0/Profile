@@ -1,0 +1,293 @@
+[{
+    "title": "Why we use <br> Elements",
+    "answer_1": "To Make Text Bold",
+    "answer_2":"To Make Text Italic",
+    "answer_3":"To Add BreakLine",
+    "answer_4": "To Add Horizontal Line",
+
+    "right": "To Add BreakLine"
+},
+
+{
+    "title": "Is <img> element Has Attributes href",
+    "answer_1": "Yes",
+    "answer_2":"No , its for Anchor tag <a>",
+    "answer_3":"All Element has this attribute",
+    "answer_4": "Aswer 1 And 3 is Right",
+
+    "right": "No , its for Anchor tag <a>"
+},
+
+{
+    "title": "Is <img> element Has Attributes href",
+    "answer_1": "Yes",
+    "answer_2":"No , its for Anchor tag <a>",
+    "answer_3":"All Element has this attribute",
+    "answer_4": "Aswer 1 And 3 is Right",
+
+    "right": "No , its for Anchor tag <a>"
+},
+
+
+
+{
+    "title": "How can we make Element text bold?",
+    "answer_1": "Putting it inside <b> Tag",
+    "answer_2":"Putting it inside <strong> Tag",
+    "answer_3":"Customers it with font weight properties in css",
+    "answer_4": "All Answer are Right",
+
+    "right": "All Answer are Right"
+},
+
+
+{
+    "title": "5*9= ?",
+    "answer_1": "55",
+    "answer_2":"53",
+    "answer_3":"45",
+    "answer_4": "46",
+
+    "right": "45"
+},
+
+{
+    "title": "5*8= ?",
+    "answer_1": "55",
+    "answer_2":"63",
+    "answer_3":"54",
+    "answer_4": "40",
+
+    "right": "40"
+},
+
+{
+    "title": "How can we make Element text bold?",
+    "answer_1": "Putting it inside <b> Tag",
+    "answer_2":"Putting it inside <strong> Tag",
+    "answer_3":"Customers it with font weight properties in css",
+    "answer_4": "All Answer are Right",
+
+    "right": "All Answer are Right"
+},
+
+{
+    "title": "How can we make Element text bold?",
+    "answer_1": "Putting it inside <b> Tag",
+    "answer_2":"Putting it inside <strong> Tag",
+    "answer_3":"Customers it with font weight properties in css",
+    "answer_4": "All Answer are Right",
+
+    "right": "All Answer are Right"
+},
+{
+    "title": "How can we make Element text bold?",
+    "answer_1": "Putting it inside <b> Tag",
+    "answer_2": "Putting it inside <strong> Tag",
+    "answer_3": "Style it with font-weight property in CSS",
+    "answer_4": "All answers are correct",
+    "right": "All answers are correct"
+  },
+  {
+    "title": "What does CSS stand for?",
+    "answer_1": "Cascading Style Sheets",
+    "answer_2": "Colorful Style Sheets",
+    "answer_3": "Computer Style Sheets",
+    "answer_4": "Creative Style Sheets",
+    "right": "Cascading Style Sheets"
+  },
+  {
+    "title": "Which JavaScript keyword is used to declare a variable?",
+    "answer_1": "var",
+    "answer_2": "let",
+    "answer_3": "const",
+    "answer_4": "All of the above",
+    "right": "All of the above"
+  },
+  {
+    "title": "Which property is used to change the background color in CSS?",
+    "answer_1": "color",
+    "answer_2": "bgcolor",
+    "answer_3": "background-color",
+    "answer_4": "background",
+    "right": "background-color"
+  },
+  {
+    "title": "What does the <title> tag in HTML define?",
+    "answer_1": "The main heading of the document",
+    "answer_2": "The document's metadata",
+    "answer_3": "The title displayed in the browser's title bar",
+    "answer_4": "The footer of the document",
+    "right": "The title displayed in the browser's title bar"
+  },
+  {
+    "title": "How can we include JavaScript code inside HTML?",
+    "answer_1": "Using <code> tags",
+    "answer_2": "Using <script> tags",
+    "answer_3": "Using <js> tags",
+    "answer_4": "Using <javascript> tags",
+    "right": "Using <script> tags"
+  },
+  {
+    "title": "Which CSS property is used to change text color?",
+    "answer_1": "color",
+    "answer_2": "text-color",
+    "answer_3": "font-color",
+    "answer_4": "background-color",
+    "right": "color"
+  },
+  {
+    "title": "Which is not a valid HTML5 element?",
+    "answer_1": "<header>",
+    "answer_2": "<footer>",
+    "answer_3": "<blink>",
+    "answer_4": "<section>",
+    "right": "<blink>"
+  },
+  {
+    "title": "What does the <img> tag in HTML do?",
+    "answer_1": "Defines a link to an image",
+    "answer_2": "Embeds an image in the document",
+    "answer_3": "Displays a placeholder for an image",
+    "answer_4": "None of the above",
+    "right": "Embeds an image in the document"
+  },
+  {
+    "title": "How can we apply a class to an HTML element?",
+    "answer_1": "Using the 'id' attribute",
+    "answer_2": "Using the 'class' attribute",
+    "answer_3": "Using the 'style' attribute",
+    "answer_4": "Using the 'className' attribute",
+    "right": "Using the 'class' attribute"
+  },
+  {
+    "title": "Which attribute specifies the URL of an image in <img>?",
+    "answer_1": "href",
+    "answer_2": "src",
+    "answer_3": "link",
+    "answer_4": "alt",
+    "right": "src"
+  },
+  {
+    "title": "How do you create a hyperlink in HTML?",
+    "answer_1": "<a href='url'>Link</a>",
+    "answer_2": "<link='url'>Link</link>",
+    "answer_3": "<hyperlink url='url'>Link</hyperlink>",
+    "answer_4": "<url='url'>Link</url>",
+    "right": "<a href='url'>Link</a>"
+  },
+  {
+    "title": "Which JavaScript keyword is used to declare a variable?",
+    "answer_1": "var",
+    "answer_2": "let",
+    "answer_3": "const",
+    "answer_4": "All of the above",
+    "right": "All of the above"
+  },
+  {
+    "title": "What is the correct syntax for adding comments in JavaScript?",
+    "answer_1": "// This is a comment",
+    "answer_2": "/* This is a comment */",
+    "answer_3": "<!-- This is a comment -->",
+    "answer_4": "Both 1 and 2",
+    "right": "Both 1 and 2"
+  },
+  {
+    "title": "Which event occurs when the user clicks on an HTML element?",
+    "answer_1": "onchange",
+    "answer_2": "onclick",
+    "answer_3": "onmouseclick",
+    "answer_4": "onmouseover",
+    "right": "onclick"
+  },
+  {
+    "title": "Which JavaScript method is used to write HTML output?",
+    "answer_1": "document.write()",
+    "answer_2": "console.log()",
+    "answer_3": "alert()",
+    "answer_4": "window.write()",
+    "right": "document.write()"
+  },
+  {
+    "title": "Which HTML element is used for the largest heading?",
+    "answer_1": "<h1>",
+    "answer_2": "<heading>",
+    "answer_3": "<h6>",
+    "answer_4": "<h0>",
+    "right": "<h1>"
+  },
+  {
+    "title": "What is the default value of the CSS position property?",
+    "answer_1": "static",
+    "answer_2": "relative",
+    "answer_3": "absolute",
+    "answer_4": "fixed",
+    "right": "static"
+  },
+  {
+    "title": "Which tag is used to create a table in HTML?",
+    "answer_1": "<table>",
+    "answer_2": "<tr>",
+    "answer_3": "<td>",
+    "answer_4": "All of the above",
+    "right": "All of the above"
+  },
+  {
+    "title": "What is the correct CSS syntax to select an element by ID?",
+    "answer_1": "#id",
+    "answer_2": ".id",
+    "answer_3": "id",
+    "answer_4": "*id",
+    "right": "#id"
+  },
+  {
+    "title": "Which property is used to change the font of an element?",
+    "answer_1": "font-family",
+    "answer_2": "font-style",
+    "answer_3": "font-weight",
+    "answer_4": "font-size",
+    "right": "font-family"
+  },
+  {
+    "title": "What is the correct way to link an external CSS file?",
+    "answer_1": "<style src='style.css'>",
+    "answer_2": "<link href='style.css' rel='stylesheet'>",
+    "answer_3": "<stylesheet>style.css</stylesheet>",
+    "answer_4": "<css src='style.css'>",
+    "right": "<link href='style.css' rel='stylesheet'>"
+  },
+  {
+    "title": "How can you add a comment in HTML?",
+    "answer_1": "// This is a comment",
+    "answer_2": "/* This is a comment */",
+    "answer_3": "<!-- This is a comment -->",
+    "answer_4": "** This is a comment **",
+    "right": "<!-- This is a comment -->"
+ },
+  {
+    "title": "Which HTML element is used to define a paragraph?",
+    "answer_1": "<par>",
+    "answer_2": "<p>",
+    "answer_3": "<paragraph>",
+    "answer_4": "<pg>",
+    "right": "<p>"
+  },
+  {
+    "title": "Which property in CSS is used to control the spacing between lines of text?",
+    "answer_1": "text-indent",
+    "answer_2": "line-spacing",
+    "answer_3": "line-height",
+    "answer_4": "spacing",
+    "right": "line-height"
+  },
+  {
+    "title": "Which attribute specifies the alternative text for an image?",
+    "answer_1": "title",
+    "answer_2": "src",
+    "answer_3": "alt",
+    "answer_4": "href",
+    "right": "alt"
+  }
+
+
+]
