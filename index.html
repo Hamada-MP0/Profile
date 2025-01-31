@@ -16,14 +16,16 @@
     <link rel="stylesheet" href="color3.css" class="alternate-style" title="color3" disabled>
     <link rel="stylesheet" href="color4.css" class="alternate-style" title="color4" disabled>
     <link rel="stylesheet" href="color5.css" class="alternate-style" title="color5" disabled>
- 
+     <link rel="stylesheet" href="styleBack.css">
     <link rel="stylesheet" href="style-Switcher.css">
     <title>Document</title>
 </head>
 <body >
-    <div class="main-container">
 
-        <div class="aside">
+    <div class="main-container ">
+
+
+        <div class="aside ">
             <div class="logo">
                 <a href="#"><span>A</span>tlas</a>
             </div>
@@ -33,13 +35,13 @@
             <ul class="nav">
                 <li><a href="#Home" class="active"><i class="fa fa-home"></i>Home</a></li>
                 <li><a href="#About" ><i class="fa fa-user"></i>About</a></li>
-                <li><a href="#Skills" ><i class="fa fa-user"></i>skills</a></li>
+                <li class="SK"><a href="#Skills" ><i class="fa fa-user"></i>skills</a></li>
                 <li><a href="#Services" ><i class="fa fa-list"></i>Services</a></li>
                 <li><a href="#Portfolio" ><i class="fa fa-briefcase"></i>Portfolio</a></li>
                 <li><a href="#Contact" ><i class="fa fa-comments"></i>Contact</a></li>
             </ul>
         </div>
-        <div class="main-content">
+        <div class="main-content ">
             <section class="home active section  "id="Home">
                 <div class="container">
                     <div class="row">
@@ -66,10 +68,10 @@
                                 <p>I'm a web Designer with extensive experience for over 2 years . My expertise is to create 
                                     and website design,graghic design,and many more....  
                                 </p>
-                            <div class="btn-box">
+                            <div class="btn-box header-btn">
                                 
                             <a href="#" class="btn ">Download CV <i class="bx bx-download"></i></a>
-                            <a href="#" class="btn ">Hire My Now! </a>
+                            <a href="#" class="btn header-btn">Hire My Now! </a>
                             </div>
                             <div class="social-icon">
                                 <a href="#"><i class='bx bxl-facebook'></i></a>
@@ -82,7 +84,7 @@
                         <div class="home-img padd-15 ">
 
                             <div>
-                                <img src="1.jpg" alt="   " class="imghome">
+                                <img src="photo/m (2).png" alt="   " class="imghome">
 
                             </div>
                             <div class="liquid-shape">
@@ -131,7 +133,7 @@
                                         M430,303.5Q454,357,412,390Q370,423,322.5,439Q275,455,232,433Q189,411,140,401Q91,391,70,345.5Q49,300,73,256Q97,212,116,180Q135,148,161,116Q187,84,228.5,83Q270,82,312.5,89.5Q355,97,407.5,118.5Q460,140,433,195Q406,250,430,303.5Z;
                                         "
                                     ></animate>
-                                </path>
+                                     </path>
                                 
                                   </svg>
                             </div>
@@ -150,43 +152,46 @@
                         </div>
                     </div>
                    <div class="ABOUT">
-                    <!-- <div class="about-img img-hero">
-                        <img src="1 (2).jpg" alt="" class="about-More">
-                            <span><i></i></span>
-                        
-                    </div> -->
                     <div class="loader">
                         <svg height="0" width="0" viewBox="0 0 64 64" class="absolute">
-                          <defs class="s-xJBuHA073rTt" xmlns="http://www.w3.org/2000/svg">
-                            <linearGradient class="s-xJBuHA073rTt" gradientUnits="userSpaceOnUse" y2="2" x2="0" y1="62" x1="0" id="b">
-                              <stop class="s-xJBuHA073rTt" stop-color="#973BED"></stop>
-                              <stop class="s-xJBuHA073rTt" stop-color="#007CFF" offset="1"></stop>
+                          <defs xmlns="http://www.w3.org/2000/svg">
+                            <!-- تعريف التدرجات اللونية -->
+                            <linearGradient id="gradient1" gradientUnits="userSpaceOnUse" y2="2" x2="0" y1="62" x1="0">
+                              <stop stop-color="#973BED"></stop>
+                              <stop stop-color="#007CFF" offset="1"></stop>
                             </linearGradient>
-                            <linearGradient class="s-xJBuHA073rTt" gradientUnits="userSpaceOnUse" y2="0" x2="0" y1="64" x1="0" id="c">
-                              <stop class="s-xJBuHA073rTt" stop-color="#FFC800"></stop>
-                              <stop class="s-xJBuHA073rTt" stop-color="#F0F" offset="1"></stop>
-                              <animateTransform repeatCount="indefinite" keySplines=".42,0,.58,1;.42,0,.58,1;.42,0,.58,1;.42,0,.58,1;.42,0,.58,1;.42,0,.58,1;.42,0,.58,1;.42,0,.58,1" keyTimes="0; 0.125; 0.25; 0.375; 0.5; 0.625; 0.75; 0.875; 1" dur="8s" values="0 32 32;-270 32 32;-270 32 32;-540 32 32;-540 32 32;-810 32 32;-810 32 32;-1080 32 32;-1080 32 32" type="rotate" attributeName="gradientTransform"></animateTransform>
+                            <linearGradient id="gradient2" gradientUnits="userSpaceOnUse" y2="0" x2="0" y1="64" x1="0">
+                              <stop stop-color="#FFC800"></stop>
+                              <stop stop-color="#F0F" offset="1"></stop>
+                              <animateTransform repeatCount="indefinite" dur="10s" values="0 32 32;-270 32 32;-540 32 32;-810 32 32;-1080 32 32" type="rotate" attributeName="gradientTransform"></animateTransform>
                             </linearGradient>
-                            <linearGradient class="s-xJBuHA073rTt" gradientUnits="userSpaceOnUse" y2="2" x2="0" y1="62" x1="0" id="d">
-                              <stop class="s-xJBuHA073rTt" stop-color="#00E0ED"></stop>
-                              <stop class="s-xJBuHA073rTt" stop-color="#00DA72" offset="1"></stop>
+                            <linearGradient id="gradient3" gradientUnits="userSpaceOnUse" y2="2" x2="0" y1="62" x1="0">
+                              <stop stop-color="#00E0ED"></stop>
+                              <stop stop-color="#00DA72" offset="1"></stop>
                             </linearGradient>
                           </defs>
                         </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 64 64" height="64" width="64" class="inline-block">
-                          <path stroke-linejoin="round" stroke-linecap="round" stroke-width="8" stroke="url(#b)" d="M 54.722656,3.9726563 A 2.0002,2.0002 0 0 0 54.941406,4 h 5.007813 C 58.955121,17.046124 49.099667,27.677057 36.121094,29.580078 a 2.0002,2.0002 0 0 0 -1.708985,1.978516 V 60 H 29.587891 V 31.558594 A 2.0002,2.0002 0 0 0 27.878906,29.580078 C 14.900333,27.677057 5.0448787,17.046124 4.0507812,4 H 9.28125 c 1.231666,11.63657 10.984383,20.554048 22.6875,20.734375 a 2.0002,2.0002 0 0 0 0.02344,0 c 11.806958,0.04283 21.70649,-9.003371 22.730469,-20.7617187 z" class="dash" id="y" pathLength="360"></path>
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" style="--rotation-duration:0ms; --rotation-direction:normal;" viewBox="0 0 64 64" height="64" width="64" class="inline-block">
-                          <path stroke-linejoin="round" stroke-linecap="round" stroke-width="10" stroke="url(#c)" d="M 32 32
-                              m 0 -27
-                              a 27 27 0 1 1 0 54
-                              a 27 27 0 1 1 0 -54" class="spin" id="o" pathLength="360"></path>
-                        </svg>
-                        <div class="w-2"></div>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" style="--rotation-duration:0ms; --rotation-direction:normal;" viewBox="0 0 64 64" height="64" width="64" class="inline-block">
-                          <path stroke-linejoin="round" stroke-linecap="round" stroke-width="8" stroke="url(#d)" d="M 4,4 h 4.6230469 v 25.919922 c -0.00276,11.916203 9.8364941,21.550422 21.7500001,21.296875 11.616666,-0.240651 21.014356,-9.63894 21.253906,-21.25586 a 2.0002,2.0002 0 0 0 0,-0.04102 V 4 H 56.25 v 25.919922 c 0,14.33873 -11.581192,25.919922 -25.919922,25.919922 a 2.0002,2.0002 0 0 0 -0.0293,0 C 15.812309,56.052941 3.998433,44.409961 4,29.919922 Z" class="dash" id="u" pathLength="360"></path>
+                      
+                        <!-- عرض اسم MOHAMED مع تكبير الحروف وزيادة المسافات -->
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 1400 200" height="200" width="1400" class="inline-block">
+                          <!-- حرف M -->
+                          <path stroke-linejoin="round" stroke-linecap="round" stroke-width="15" stroke="url(#gradient1)" d="M 50 190 L 100 20 L 150 90 L 200 20 L 250 190" class="dash" pathLength="360"></path>
+                          <!-- حرف O -->
+                          <path stroke-linejoin="round" stroke-linecap="round" stroke-width="15" stroke="url(#gradient2)" d="M 300 100 a 70 70 0 1 0 140 0 a 70 70 0 1 0 -140 0" class="spin" pathLength="360"></path>
+                          <!-- حرف H -->
+                          <path stroke-linejoin="round" stroke-linecap="round" stroke-width="15" stroke="url(#gradient3)" d="M 500 20 L 500 190 M 500 100 L 600 100 M 600 20 L 600 190" class="dash" pathLength="360"></path>
+                          <!-- حرف A -->
+                          <path stroke-linejoin="round" stroke-linecap="round" stroke-width="15" stroke="url(#gradient1)" d="M 650 190 L 700 20 L 750 190 M 670 100 L 730 100" class="dash" pathLength="360"></path>
+                          <!-- حرف M -->
+                          <path stroke-linejoin="round" stroke-linecap="round" stroke-width="15" stroke="url(#gradient2)" d="M 800 190 L 850 20 L 900 90 L 950 20 L 1000 190" class="dash" pathLength="360"></path>
+                          <!-- حرف E -->
+                          <path stroke-linejoin="round" stroke-linecap="round" stroke-width="15" stroke="url(#gradient3)" d="M 1050 20 L 1050 190 M 1050 20 L 1150 20 M 1050 100 L 1150 100 M 1050 190 L 1150 190" class="dash" pathLength="360"></path>
+                          <!-- حرف D -->
+                          <path stroke-linejoin="round" stroke-linecap="round" stroke-width="15" stroke="url(#gradient1)" d="M 1200 20 L 1200 190 M 1200 20 L 1300 20 L 1300 190 L 1200 190" class="dash" pathLength="360"></path>
                         </svg>
                       </div>
+                      
+                      
                       
                     <div class="about-content">
                         <h2 class="heading">ABOUT MY</h2>
@@ -253,122 +258,10 @@
                    </div>
 
 
-
-
-
-
-
-
-
-
-
-                    <!-- 
-                    <div>
-                        <div class="img-about  ">
-                            <img src="1.jpg" alt="">
-                            <div class="info-about">
-                                <span>10+</span>
-                                <p>Years of Experience</p>
-                            </div>
-                            <div class="info-about">
-                                <span>150+</span>
-                                <p>Project Complete</p>
-                            </div>
-                            <div class="info-about">
-                                <span>200+</span>
-                                <p>Mappy Cionts</p>
-                            </div>
-                        </div>
-                        
-                        <div class="row">
-                            <div class="about-text padd-15">
-    
-                                <h3>I'm Mohamed Abdalluh and <span>Web Developer</span></h3>
-                                <h3>A story of good</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Iusto voluptas quia nemo error 
-                                animi aliquam soluta eum suscipit nostrum, eaque mollitia laborum minus rerum, 
-                                adipisci cupiditate earum quis esse totam?
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                                Velit ut praesentium ad nesciunt rerum ipsa quas, 
-                                nam ex earum ratione qui numquam ullam saepe,
-                                 porro hic vitae iusto odit aspernatur.</p>
-    
-    
-                            </div>
-                        </div>
-                    </div> -->
                     <div class="row">
                         <div class="about-content padd-15">
 
-                            <!-- <div class="row">
-                                <div class="personal-info padd-15">
-                                    <div class="row">
-                                        <div class="info-item padd-15">
-                                            <p>Birthday : <span>22 Jan 2005</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Age : <span>19 </span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Website : <span>www.domain.com </span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Email : <span>mp6427241@gmail.com </span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Degree : <span>CS </span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Phone : <span>+20 1025579309 </span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>City : <span>Fayoum </span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Freelance : <span>Available </span></p>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="buttons padd-15">
-                                            <a href="#Contact" data-section-index="1" class="btn hire-me">Hire me</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="skills padd-15">
-                                    <div class="row">
-                                        <div class="skill-item padd-15">
-                                            <h5>CSS</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 86%;"> </div>
-                                                <div class="skill-percent">86%</div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>JS</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 76%;"> </div>
-                                                <div class="skill-percent">76%</div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>C++</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 90%;"> </div>
-                                                <div class="skill-percent">90%</div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>HTML</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 96%;"> </div>
-                                                <div class="skill-percent">96%</div>
-                                            </div>
-                                        </div>
-                                         
-                                    </div>
-                                </div>
-                            </div> -->
+                          
                             <div class="row hidden reading">
                                 <div class="education padd-15">
                                     <h3 class="title">Education</h3>
@@ -466,7 +359,7 @@
                     </div>
                 </div>
             </section>
-            <section class="Skills section active" id="Skills">
+            <section class="Skills section " id="Skills">
 
                 <div class="container ">   
                  <div class="row">
@@ -485,17 +378,27 @@
                                     <p>92%</p>
                                 </div>
                                 <div class="bar">
-                                    <span>HTML</span>
+                                    <span class="html"></span>
                                 </div>
                             </div>
 
                             <div class="skill-bar">
                                 <div class="info">
                                     <p>CSS</p>
-                                    <p>90%</p>
+                                    <p>85%</p>
                                 </div>
                                 <div class="bar">
-                                    <span>CSS</span>
+                                    <span class="css"></span>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-bar">
+                                <div class="info">
+                                    <p>Python</p>
+                                    <p>43%</p>
+                                </div>
+                                <div class="bar">
+                                    <span class="Python"></span>
                                 </div>
                             </div>
 
@@ -505,7 +408,7 @@
                                     <p>83%</p>
                                 </div>
                                 <div class="bar">
-                                    <span>JavaSCript</span>
+                                    <span class="JavaSCript"></span>
                                 </div>
                             </div>
 
@@ -515,107 +418,102 @@
                                     <p>90%</p>
                                 </div>
                                 <div class="bar">
-                                    <span>C++</span>
+                                    <span class="Cplus"></span>
                                 </div>
                             </div>
                         </div>
                         <div class="skill-right">
                             <h3>Professional Skills</h3>
+                            <div class="professional">
+                                <div class="box">
+                                    <div class="circle" data-dots="65" data-percent="90">
+                                    </div>
+                                    <div class="text">
+                                        <big>90%</big>
+                                        <small>Team Work</small>
+                                    </div>
+                                </div>
+                                <div class="box">
+                                    <div class="circle" data-dots="50" data-percent="85">
+                                    </div>
+                                    <div class="text">
+                                        <big>85%</big>
+                                        <small>Creative</small>
+                                    </div>
+                                </div>
+                                <div class="box">
+                                    <div class="circle" data-dots="55" data-percent="90">
+                                    </div>
+                                    <div class="text">
+                                        <big>90%</big>
+                                        <small>Project Management</small>
+                                    </div>
+                                </div>
+                                <div class="box">
+                                    <div class="circle" data-dots="40" data-percent="70">
+                                    </div>
+                                    <div class="text">
+                                        <big>70%</big>
+                                        <small>Compluncation</small>
+                                    </div>
+                                </div>
+                                <div class="box">
+                                    <div class="circle" data-dots="50" data-percent="40">
+                                    </div>
+                                    <div class="text">
+                                        <big>40%</big>
+                                        <small>Experience</small>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
 
 
 
-
-
-
-
-
-
-
-
-
-<!--                     
-                    <div class="row">
-                        <div class="about-content padd-15">
-                            
-                            <div class="row">
-                                <div class="personal-info padd-15">
-                                    <div class="row">
-                                        <div class="info-item padd-15">
-                                            <p>Birthday : <span>22 Jan 2005</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Age : <span>19 </span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Website : <span>www.domain.com </span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Email : <span>mp6427241@gmail.com </span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Degree : <span>CS </span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Phone : <span>+20 1025579309 </span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>City : <span>Fayoum </span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Freelance : <span>Available </span></p>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="buttons padd-15">
-                                            <a href="#Contact" data-section-index="1" class="btn hire-me">Hire me</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="skills padd-15">
-                                    <div class="row">
-                                        <div class="skill-item padd-15">
-                                            <h5>CSS</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 86%;"> </div>
-                                                <div class="skill-percent">86%</div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>JS</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 76%;"> </div>
-                                                <div class="skill-percent">76%</div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>C++</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 90%;"> </div>
-                                                <div class="skill-percent">90%</div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>HTML</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 96%;"> </div>
-                                                <div class="skill-percent">96%</div>
-                                            </div>
-                                        </div>
-                                         
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div> -->
                 </div> 
 
             </section>
              <section class="service section  " id="Services">
-                
+                <div class="container ">   
+                    <div class="row">
+                       <div class="section-title padd-15">
+                           <h2>SERVICES</h2>
+                       </div>
+                   </div>
+                   <div class="row">
+                    <div class="section-services">
+                        <div class="services-box">
+                            <i class="bx bx-code-alt service-icon"></i>
+                            <h3>GRAPHIC DESGINER </h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime voluptatibus porro deleniti odit laudantium, ex doloremque dolores nam ratione beatae enim aperiam suscipit quis temporibus itaque esse cupiditate eaque quod!</p>
+                            <div class="btn-box service-btn">
+                                <a href="#" class="btn">Read More</a>
+                            </div>
+                        </div>
+                        <div class="services-box">
+                            <i class="bx bxs-layer service-icon"></i>
+                            <h3>GRAPHIC DESGINER </h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime voluptatibus porro deleniti odit laudantium, ex doloremque dolores nam ratione beatae enim aperiam suscipit quis temporibus itaque esse cupiditate eaque quod!</p>
+                            <div class="btn-box service-btn">
+                                <a href="#" class="btn">Read More</a>
+                            </div>
+                        </div>
+                        <div class="services-box">
+                            <i class="bx bx-desktop service-icon"></i>
+                            <h3>GRAPHIC DESGINER </h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime voluptatibus porro deleniti odit laudantium, ex doloremque dolores nam ratione beatae enim aperiam suscipit quis temporibus itaque esse cupiditate eaque quod!</p>
+                            <div class="btn-box service-btn">
+                                <a href="#" class="btn">Read More</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                   </div>
+                </div>
 
             </section>
 
@@ -626,56 +524,163 @@
                             <h2>Portfolio</h2>
                         </div>
                     </div>
-                    <div class="row"> 
+                    <div class="row">
                         <div class="Portfolio-heading padd-15">
-                            <h2>My Last Project :
-                            </h2>
+                            <h2>My Last Project:</h2>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="Portfolio-item padd-15">
-                            <div class="Portfolio-item-inner shadow dark">
-                                <div class="Portfolio-img">
-                                    <img src="D:\projects\web\protfole\photo\1 (1).jpg" alt="">
-                                </div>
+                        <div class="container">
+                            <div class="fillter-buttons">
+                                <button class="btn active" data-filter="all">ALL</button>
+                                <button class="btn" data-filter="p1">PRODUCT</button>
+                                <button class="btn" data-filter="p2">INTERACTING</button>
+                                <button class="btn" data-filter="p3">WEB APP</button>
                             </div>
                         </div>
-                        <div class="Portfolio-item padd-15">
-                            <div class="Portfolio-item-inner shadow dark">
-                                <div class="Portfolio-img">
-                                    <img src="D:\projects\web\protfole\photo\1 (2).jpg" alt="">
+                        <div class="protfolio-gallery">
+                            <!-- الصور الخاصة بـ PRODUCT -->
+                            <div class="port-box p1">
+                                <div class="port-image">
+                                    <img src="photo/1.jpg" alt="">
+                                </div>
+                                <div class="port-content">
+                                    <h3>Graphic Design</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                    <a href="#"><i class="bx bx-link-external"></i></a>
                                 </div>
                             </div>
-                        </div>
-                        <div class="Portfolio-item padd-15">
-                            <div class="Portfolio-item-inner shadow dark">
-                                <div class="Portfolio-img">
-                                    <img src="D:\projects\web\protfole\photo\1 (3).jpg" alt="">
+                            <div class="port-box p1">
+                                <div class="port-image">
+                                    <img src="photo/2.jpg" alt="">
+                                </div>
+                                <div class="port-content">
+                                    <h3>Graphic Design</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                    <a href="#"><i class="bx bx-link-external"></i></a>
                                 </div>
                             </div>
-                        </div>
-                        <div class="Portfolio-item padd-15">
-                            <div class="Portfolio-item-inner shadow dark">
-                                <div class="Portfolio-img">
-                                    <img src="D:\projects\web\protfole\photo\1 (4).jpg" alt="">
+            
+
+                            <div class="port-box p1">
+                                <div class="port-image">
+                                    <img src="photo/3.jpg" alt="">
+                                </div>
+                                <div class="port-content">
+                                    <h3>Graphic Design</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                    <a href="#"><i class="bx bx-link-external"></i></a>
                                 </div>
                             </div>
-                        </div>
-                        <div class="Portfolio-item padd-15">
-                            <div class="Portfolio-item-inner shadow dark">
-                                <div class="Portfolio-img">
-                                    <img src="D:\projects\web\protfole\photo\1 (2).jpg" alt="">
+                            <div class="port-box p1">
+                                <div class="port-image">
+                                    <img src="photo/4.jpg" alt="">
+                                </div>
+                                <div class="port-content">
+                                    <h3>Graphic Design</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                    <a href="#"><i class="bx bx-link-external"></i></a>
                                 </div>
                             </div>
-                        </div>
-                        <div class="Portfolio-item padd-15">
-                            <div class="Portfolio-item-inner shadow dark">
-                                <div class="Portfolio-img">
-                                    <img src="D:\projects\web\protfole\photo\1 (1).jpg" alt="">
+                            <!-- الصور الخاصة بـ INTERACTING -->
+                            <div class="port-box p2">
+                                <div class="port-image">
+                                    <img src="photo/1 (1).jpg" alt="">
+                                </div>
+                                <div class="port-content">
+                                    <h3>Graphic Design</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                    <a href="#"><i class="bx bx-link-external"></i></a>
                                 </div>
                             </div>
+                            <div class="port-box p2">
+                                <div class="port-image">
+                                    <img src="photo/1 (2).jpg" alt="">
+                                </div>
+                                <div class="port-content">
+                                    <h3>Graphic Design</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                    <a href="#"><i class="bx bx-link-external"></i></a>
+                                </div>
+                            </div>
+                            <div class="port-box p2">
+                                <div class="port-image">
+                                    <img src="photo/1 (3).jpg" alt="">
+                                </div>
+                                <div class="port-content">
+                                    <h3>Graphic Design</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                    <a href="#"><i class="bx bx-link-external"></i></a>
+                                </div>
+                            </div>
+                            <div class="port-box p2">
+                                <div class="port-image">
+                                    <img src="photo/1 (4).jpg" alt="">
+                                </div>
+                                <div class="port-content">
+                                    <h3>Graphic Design</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                    <a href="#"><i class="bx bx-link-external"></i></a>
+                                </div>
+                            </div>
+            
+                            <!-- الصور الخاصة بـ WEB APP -->
+                            <div class="port-box p3">
+                                <div class="port-image">
+                                    <img src="photo/1 (5).jpg" alt="">
+                                </div>
+                                <div class="port-content">
+                                    <h3>Graphic Design</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                    <a href="#"><i class="bx bx-link-external"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="port-box p3">
+                                <div class="port-image">
+                                    <img src="photo/1 (6).jpg" alt="">
+                                </div>
+                                <div class="port-content">
+                                    <h3>Graphic Design</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                    <a href="#"><i class="bx bx-link-external"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="port-box p3">
+                                <div class="port-image">
+                                    <img src="photo/1 (7).jpg" alt="">
+                                </div>
+                                <div class="port-content">
+                                    <h3>Graphic Design</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                    <a href="#"><i class="bx bx-link-external"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="port-box p3">
+                                <div class="port-image">
+                                    <img src="photo/1 (8).jpg" alt="">
+                                </div>
+                                <div class="port-content">
+                                    <h3>Graphic Design</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                    <a href="#"><i class="bx bx-link-external"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="port-box p3">
+                                <div class="port-image">
+                                    <img src="photo/1 (9).jpg" alt="">
+                                </div>
+                                <div class="port-content">
+                                    <h3>Graphic Design</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                    <a href="#"><i class="bx bx-link-external"></i></a>
+                                </div>
+                            </div>
+
                         </div>
-                        
                     </div>
                 </div>
             </sections> 
@@ -773,8 +778,12 @@
         </div>
         <div class="day-night s-icon">
             
-            <!-- <i class="fas fa-moon"> </i> -->
-            <i class="fa "> </i>
+ <label class="ui-switch">
+    <input type="checkbox" id="theme-switcher">  
+  <div class="slider">
+      <div class="circle"></div>
+    </div>
+  </label>
         </div>
         <h4>Theme Colors</h4>
         <div class="colors">

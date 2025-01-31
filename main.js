@@ -9,6 +9,7 @@ const nav =document.querySelector(".nav"),
     {
         const a=navlist[i].querySelector("a");
         a.addEventListener("click",function () {
+
           removeBackSection();
             for(let j=0;j<totalNavlist;j++)
             {
@@ -65,15 +66,6 @@ const nav =document.querySelector(".nav"),
             }
         }
 
-        // document.querySelector(".hire-me").addEventListener("click",function(){
-        //     const sectionIndex= this.getAttribute("data-section-index");
-        //     showSection(this);
-        //     updateNav(this);
-        //     removeBackSection();
-        //     addBackSection(sectionIndex);  
-
-        // })
-
         const navTogglerBtn=document.querySelector(".nav-toggler"),
         aside=document.querySelector(".aside");
         navTogglerBtn.addEventListener("click",()=>
@@ -93,10 +85,19 @@ const nav =document.querySelector(".nav"),
 ///////////////////////////////////////////////////////
 let subBtn = document.querySelector(".sub-btn");
 let suRead = document.querySelector(".reading");
-subBtn.onclick=function()
-{
-    suRead.classList.remove("hidden");
-}/////////////////////////////////////////////////////////////////////////////
+let readMoreBtn = document.querySelector(".sub-btn .btn"); // الحصول على الزر مباشرة
+
+subBtn.onclick = function() {   
+    suRead.classList.toggle("hidden");
+
+    // التحقق من النص الحالي وتحديثه
+    if (readMoreBtn.textContent !== "Read Less") {
+        readMoreBtn.textContent = "Read Less";
+    } else {
+        readMoreBtn.textContent = "Read More";
+    }
+};
+/////////////////////////////////////////////////////////////////////////////
 
 
 const buttons =document.querySelectorAll(".about-btn button");
@@ -111,4 +112,96 @@ buttons.forEach((button,index) =>{
          button.classList.add("active") 
         });
     
+});
+
+/////////////*****************/////////////////////// */
+// Dark mode
+document.addEventListener('DOMContentLoaded', function () {
+    const themeSwitcher = document.getElementById('theme-switcher');
+    const body = document.body;
+
+    // تحقق من الإعدادات المحفوظة (إذا كان المستخدم قد اختار الوضع الدارك مسبقًا)
+    if (localStorage.getItem('theme') === 'dark') {
+        body.classList.add('shadow-dark');
+        themeSwitcher.checked = true;
+    }
+
+    // إضافة حدث التبديل
+    themeSwitcher.addEventListener('change', function () {
+        if (this.checked) {
+            body.classList.add('shadow-dark');
+            localStorage.setItem('theme', 'dark');
+        } else {
+            body.classList.remove('shadow-dark');
+            localStorage.setItem('theme', 'light');
+        }
+    });
+});
+
+//////////////////////////////////////
+let Skills =document.querySelector(".SK");
+Skills.addEventListener("click",()=>{
+  
+}
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const butPr =document.querySelectorAll(".fillter-buttons button");
+const portBox = document.querySelectorAll(".port-box");
+
+
+
+
+butPr.forEach((button) =>{
+        button.addEventListener("click",()=>
+        {
+            portBox.forEach(contents =>contents.style.display="none");
+            portBox.style.display="block";
+         butPr.forEach(btn => btn.classList.remove("active"));
+         button.classList.add("active") 
+        });
+    
+});
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const filterButtons = document.querySelectorAll('.fillter-buttons .btn');
+    const portfolioItems = document.querySelectorAll('.port-box');
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            // إزالة الفئة "active" من جميع الأزرار
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            // إضافة الفئة "active" للزر الذي تم النقر عليه
+            this.classList.add('active');
+
+            const filterValue = this.getAttribute('data-filter');
+
+            portfolioItems.forEach(item => {
+                if (filterValue === 'all' || item.classList.contains(filterValue)) {
+                    item.style.display = 'block'; // عرض العنصر
+                } else {
+                    item.style.display = 'none'; // إخفاء العنصر
+                }
+            });
+        });
+    });
 });
