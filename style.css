@@ -66,10 +66,6 @@ ul{
 {
     z-index: 1;
 }
-/* .main-container
-{
-    display: none;
-} */
 
 
 
@@ -1263,7 +1259,7 @@ z-index: 10;
     font-size: 2.1rem;
     line-height: 3rem;
     margin: .5rem 0;
-
+color: var(--text-black-700);
 }
 .about-content p{
     color: var(--text-black-700);
@@ -1285,7 +1281,7 @@ font-weight: 500;
     box-shadow: rgba(60, 64, 67, 0.3)0px 1px 2px 0,rgba(60, 64, 67, 0.15)0px 2px 6px 2px;
     cursor: pointer;
     transition: all .3s ease;
-
+color: var(--text-black-700);
 }
 .about-btn button.active{
     background: var(--skin-color);
@@ -1330,20 +1326,20 @@ font-weight: 500;
   }
   
   .dash {
-    animation: dashArray 2s ease-in-out infinite,
-      dashOffset 2s linear infinite;
+    animation: dashArray 4s ease-in-out infinite,
+      dashOffset 4s linear infinite;
   }
   
   .spin {
     animation: spinDashArray 2s ease-in-out infinite,
-      spin 8s ease-in-out infinite,
+      spin 16s ease-in-out infinite,
       dashOffset 2s linear infinite;
     transform-origin: center;
   }
   
   @keyframes dashArray {
     0% {
-      stroke-dasharray: 0 1 359 0;
+      stroke-dasharray: 150 0 0 0;
     }
   
     50% {
@@ -1357,15 +1353,13 @@ font-weight: 500;
   
   @keyframes spinDashArray {
     0% {
-      stroke-dasharray: 270 90;
+        stroke-dasharray: 0 46;
     }
-  
     50% {
-      stroke-dasharray: 0 360;
+        stroke-dasharray: 50 50;
     }
-  
     100% {
-      stroke-dasharray: 270 90;
+        stroke-dasharray: 90 0;
     }
   }
   
@@ -1386,30 +1380,24 @@ font-weight: 500;
   
     12.5%,
     25% {
-      rotate: 270deg;
+      rotate: 150deg;
     }
   
     37.5%,
     50% {
-      rotate: 540deg;
+      rotate: -140deg;
     }
   
-    62.5%,
-    75% {
-      rotate: 810deg;
-    }
   
-    87.5%,
-    100% {
-      rotate: 1080deg;
-    }
   }
          
 
 
 
   /* skills */
-
+  .skill-left .skill-bar .info p{
+    color: var(--bg-back);
+  }
 .skill-main{
     width: 100%;
     display: grid;
@@ -1423,6 +1411,7 @@ font-weight: 500;
   .skill-main h3{
     margin-bottom: 5rem;
     text-align: center;
+    color: var(--bg-back);
     font-size: 3.3rem;
   }
   .skill-left .skill-bar .info{
@@ -1452,23 +1441,29 @@ font-weight: 500;
 }
   .skill-bar .bar .html{
     width: 92%;
-    animation: html 2s;
+    animation: html 3s infinite  ease-in-out; /* مدة أطول وتوقيت ببطء */
+    animation-delay: 1s;
   }
   .skill-bar .bar .css{
     width: 85%;
-    animation: css 3s;
+    animation: css 3.5s infinite  ease-in-out; /* مدة أطول وتوقيت ببطء */
+    animation-delay: 1s;
   }
   .skill-bar .bar .JavaSCript{
     width: 83%;
-    animation: JavaSCript 5s;
+    animation: JavaSCript 3.7s  infinite  ease-in-out; /* مدة أطول وتوقيت ببطء */
+    animation-delay: 1s;
   }
   .skill-bar .bar .Cplus{
     width: 90%;
-    animation: cplus 6s;
+    animation: cplus 3.2s infinite  ease-in-out; /* مدة أطول وتوقيت ببطء */
+    animation-delay: 1s;
   }
   .skill-bar .bar .Python{
     width: 43%;
-    animation: Python 4s;
+    animation: Python 4.2s infinite  ease-in-out; /* مدة أطول وتوقيت ببطء */
+    animation-delay: 1s;
+    
   }
   
   
@@ -1477,7 +1472,9 @@ font-weight: 500;
   @keyframes html{
     0%{
       width: 0%;
-    }
+    } 70%{
+        width: 92%;
+      }
     100%{
       width: 92%;
     }
@@ -1485,7 +1482,9 @@ font-weight: 500;
   @keyframes css{
     0%{
       width: 0%;
-    }
+    } 70%{
+        width: 85%;
+      }
     100%{
       width: 85%;
     }
@@ -1493,7 +1492,9 @@ font-weight: 500;
   @keyframes JavaSCript{
     0%{
       width: 0%;
-    }
+    } 70%{
+        width: 83%;
+      }
     100%{
       width: 83%;
     }
@@ -1502,19 +1503,24 @@ font-weight: 500;
     0%{ 
       width: 0%;    
     }
-    100%{
+    70%{
       width: 90%;
     }
+    100%{
+        width: 90%;
+      }
   }
-  @keyframes Python{
-    0%{
+  @keyframes Python {
+    0% {
       width: 0%;
     }
-    100%{
+    70% {
+      width: 43%;
+    }
+    100% {
       width: 43%;
     }
   }
-
   .professional{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1563,13 +1569,20 @@ flex: 1 1 15rem;
 
 .points.marked{
 
-    animation: glow 0.04s linear forwards;
+    animation: glow 6s ease-in-out infinite  ;
     animation-delay: calc(var(--i)*0.05s);
 }
 @keyframes glow{
     0%{
         background: #050505;
         box-shadow: none;
+    }
+    80%{
+        background: var(--skin-color);
+        
+        box-shadow: 9px 5px 5px 5px rgba(197, 192, 192, 0.603);
+    
+
     }
     100%{
         background: var(--skin-color);
@@ -1627,6 +1640,7 @@ flex: 1 1 15rem;
 }
 .services-box h3{
     margin-top: 10px;
+    color: var(--text-black-700);
     font-size: 1.5rem;
 }
 
